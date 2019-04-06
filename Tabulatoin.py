@@ -142,6 +142,7 @@ def TableA(input):
         for x in inputList:
             if x.prime_implicants:
                 tempB = ClassB(x.data, x.underscore)
+                # "not in" + "append" usage can be replaced with set data structure and add() function call.  
                 if tempB not in listB:
                     listB.append(tempB)
 
